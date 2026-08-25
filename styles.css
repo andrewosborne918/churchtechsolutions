@@ -254,12 +254,33 @@ a { color: var(--navy-mid); }
 }
 
 .solutions,
-.process,
 .pricing,
 .about {
   padding: 3.5rem var(--space);
   max-width: var(--wide);
   margin: 0 auto;
+}
+
+.process {
+  padding: 3.5rem var(--space);
+  background: var(--gold);
+  color: var(--navy);
+}
+
+.process h2 { color: var(--navy); }
+
+.process .subhead,
+.process .steps p { color: var(--navy-mid); }
+
+.process .steps {
+  max-width: var(--wide);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.process .step-n {
+  background: var(--navy);
+  color: var(--gold);
 }
 
 .section-kicker,
@@ -355,6 +376,9 @@ a { color: var(--navy-mid); }
   }
 
   .steps li { position: relative; z-index: 1; background: var(--white); }
+
+  .process .steps::before { border-top-color: rgba(11, 28, 51, 0.28); }
+  .process .steps li { background: var(--gold); }
 }
 
 .plans { gap: 1rem; }
