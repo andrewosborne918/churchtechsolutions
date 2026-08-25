@@ -37,7 +37,7 @@
       })
       .then(function (result) {
         if (result.ok) {
-          window.location.href = "/thank-you";
+          window.location.href = "thank-you.html";
           return;
         }
         throw new Error((result.body && result.body.message) || "The request did not send.");
