@@ -116,18 +116,32 @@ a { color: var(--navy-mid); }
 .brand {
   display: flex;
   align-items: center;
-  gap: 0.65rem;
-  color: var(--gold);
+  flex-shrink: 1;
+  min-width: 0;
   text-decoration: none;
-  font-weight: 600;
-  line-height: 1.1;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  font-size: 0.72rem;
-  flex-shrink: 0;
 }
 
-.brand__mark { width: 2.1rem; height: 2.1rem; flex-shrink: 0; }
+.brand__logo {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+.brand__logo--h {
+  height: 2.75rem;
+  width: auto;
+  max-width: min(17.5rem, 58vw);
+}
+
+.brand__logo--v {
+  width: 11rem;
+  height: auto;
+}
+
+.brand--footer {
+  display: block;
+  max-width: 12rem;
+}
 
 .nav {
   display: none;
