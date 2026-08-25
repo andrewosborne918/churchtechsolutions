@@ -25,7 +25,7 @@
     event.preventDefault();
     show("Sending…", "ok");
 
-    fetch("https://formsubmit.co/ajax/andrew.churchtechsolutions@gmail.com", {
+    fetch("https://formsubmit.co/ajax/andrew@churchtechsolutions.com", {
       method: "POST",
       headers: { Accept: "application/json" },
       body: data
