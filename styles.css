@@ -422,7 +422,47 @@ a { color: var(--navy-mid); }
 .plan--popular .plan__setup,
 .plan--popular li { color: #c9d3e2; }
 
-.plan__setup { margin: 0.15rem 0 1rem; color: var(--mute); font-size: 0.92rem; }
+.plan__setup { margin: 0.15rem 0 0.35rem; color: var(--mute); font-size: 0.92rem; }
+
+.plan__today {
+  margin: 0 0 1rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--navy);
+}
+
+.plan--popular .plan__today { color: var(--gold); }
+
+.start-hero {
+  padding: 3rem var(--space) 1.5rem;
+  max-width: 40rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.start-hero h1 {
+  font-family: var(--display);
+  font-size: clamp(2rem, 4vw, 3rem);
+  color: var(--navy);
+  margin: 0 0 0.8rem;
+}
+
+.start-hero .lede {
+  margin: 0 auto;
+  color: var(--mute);
+}
+
+.start-offers { padding-top: 1rem; }
+
+.start-offers .plan .btn { width: 100%; }
+
+.start-note {
+  max-width: 40rem;
+  margin: 2rem auto 0;
+  text-align: center;
+  color: var(--mute);
+  font-size: 0.95rem;
+}
 
 .plan ul {
   list-style: none;
