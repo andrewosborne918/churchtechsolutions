@@ -171,8 +171,8 @@ a { color: var(--navy-mid); }
 
 .hero {
   display: grid;
-  gap: 2.5rem;
-  padding: 3rem var(--space) 3.5rem;
+  gap: 1.75rem;
+  padding: 2.75rem var(--space) 2.75rem;
   background:
     radial-gradient(1200px 400px at 80% 0%, #16345c 0%, transparent 55%),
     var(--navy);
@@ -204,7 +204,7 @@ a { color: var(--navy-mid); }
 }
 
 .lede {
-  max-width: 34rem;
+  max-width: 32rem;
   color: #d7deea;
   margin: 0 0 1.2rem;
 }
@@ -248,9 +248,8 @@ a { color: var(--navy-mid); }
 .hero__shot img {
   width: 100%;
   height: auto;
-  max-width: 42rem;
+  max-width: 38rem;
   display: block;
-  margin-left: auto;
   filter: drop-shadow(0 22px 36px rgba(0, 0, 0, 0.38));
 }
 
@@ -504,10 +503,14 @@ body.admin-bar .site-header { top: 32px; }
 
 @media (min-width: 800px) {
   .hero {
-    grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr);
+    grid-template-columns: 1fr minmax(18rem, 26rem) minmax(22rem, 38rem) 1fr;
+    column-gap: 1.5rem;
     align-items: center;
-    padding: 4rem var(--space) 4.5rem;
+    padding: 3.25rem var(--space) 3.25rem;
   }
+
+  .hero__copy { grid-column: 2; }
+  .hero__shot { grid-column: 3; }
 
   .solution-grid { grid-template-columns: repeat(5, 1fr); }
   .steps { grid-template-columns: repeat(5, 1fr); }
